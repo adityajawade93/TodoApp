@@ -1,0 +1,43 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JQTest</title>
+	
+	 <style type="text/css">
+        .active-item{
+
+                        background-color: yellow;
+                        font-family: Courier;
+                    }/*higlight the selected item*/
+
+                    /*.highlight{
+
+                        outline-color: red;
+                    }*/
+
+    .doneItem{
+        color:green;
+        text-decoration:line-through;/*gives the slash line effect*/
+    }/*change appearance of done items*/
+
+    .list{
+        color:red;
+    }/*change appearance of todo items*/
+
+    </style>
+</head>
+<body>
+	<h3>Simple To Do List</h3>
+	<p>press enter to add tasks and select and press DELETE to remove done tasks</p>
+	<input type = "text" name ="task" id = "content">
+	<ul class = "list"><!-- todo items list -->
+	</ul>
+	<ul class = "done"><!-- done items list -->
+	</ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><!-- jquery -->
+	 <script type="text/javascript" src = "app.js"></script><!-- main app script -->
+</body>
+
+</html>
