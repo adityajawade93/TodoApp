@@ -5,7 +5,8 @@ var main = function(){
 
 
 	$(document).on('click','.item',function(){
-
+        
+        $('.active-item').removeClass('active-item');
 		$(this).toggleClass('active-item');
 	});//handles the click event on selected task and higlights it
 	
